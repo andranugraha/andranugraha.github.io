@@ -5,7 +5,7 @@ $(document).ready(function(){
             $("nav").css("top" , "0px");
             $("nav").css("opacity" , "1");
         } else {
-            $("nav").css("top" , "-50px");
+            $("nav").css("top" , "-60px");
         }
         dh = $(document).height();
         wh = $(window).height();
