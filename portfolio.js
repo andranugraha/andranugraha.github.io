@@ -1,3 +1,7 @@
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -13,5 +17,5 @@ $(document).ready(function(){
         var top = 50 - (scroll / (dh-wh)) * 30;
         $(".scrollBar").css("height" , height + "vh");
         $(".scrollBar").css("top" , top + "vh");
-    })
-})
+    });
+});
