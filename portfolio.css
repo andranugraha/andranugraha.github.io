@@ -64,7 +64,8 @@ header {
     -webkit-text-stroke-color: whitesmoke;
 }
 section {
-    height: 100vh;
+    max-height: 100vh;
+    min-height: 90vh;
 }
 .name-head {
     position: absolute;
@@ -118,21 +119,28 @@ main {
     justify-content: center;
     align-items: center;
     color: whitesmoke;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    border-radius: 5rem 0 5rem 0;
 }
 main .container {
     justify-content: center;
     align-items: center;
 }
-main .row {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+main .card {
+    background-color: orange;
+    border-radius: 3rem 0 3rem 0;
+}
+main .card .row {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .icon img {
     max-width: 100%;
     filter: drop-shadow(8px 8px 10px rgb(20, 20, 20));
 }
 .about {
-    margin-top: 10vh;
+    margin-top: 5vh;
     justify-content: center;
     align-items: center;
 }
@@ -161,12 +169,18 @@ main .row {
     width: calc(100% + 1px);
     height: 100%;
 }
+.skill2 {
+    background-color: black;
+    height: 90vh;
+    border-radius: 5rem 0 0 0;
+    background-image: url("assets/img/bg-skill.png");
+    background-size: cover;
+}
 #skill{
     justify-content: center;
     color: whitesmoke;
-    background-image: url("assets/img/bg-skill.png");
-    background-size: cover;
     margin-bottom: 300px;
+    background-color: orange;
 }
 #skill .container {
     justify-content: center;
@@ -199,13 +213,12 @@ main .row {
     color: whitesmoke;
     background-image: url("assets/img/bg-project.png");
     background-size: cover;
-    margin-bottom: 300px;
 }
 #project .container {
     justify-content: center;
 }
 #project .atas {
-    padding-top: 30vh;
+    padding-top: 15%;
 }
 #project h1{
     color: orange;
